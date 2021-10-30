@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>Counter</h1>
+    <h2>{{session["counter"]}} times.</h2>
+    <div class="button-contain">
+        <form action="{{ url_for('session_two') }}">
+            <button type="submit" class="button-style blue">Add 2 Visits!</button>
+        </form>
+        <form action="{{ url_for('reset') }}">
+            <button type="submit" class="button-style red">reset</button>
+        </form>
+        <form action="{{ url_for('session_two') }}">
+            <input type="number" name="add_number">
+            <button type="submit" class= "button-style green">Add</button>
+        </form>
+    </div>
+</body>
+</html>

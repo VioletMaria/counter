@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.button-contain {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+}
+
+.button-style {
+    border-color: black;
+    box-shadow: 2px 2px black;
+    padding: 10px;
+}
+
+.blue {
+    background-color: cornflowerblue;
+}
+
+.red {
+    background-color: crimson;
+}
+
+input {
+    width: 50px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.green {
+    background-color: green;
+}
